@@ -3,6 +3,12 @@ FROM python:3.8-slim
 # Set working directory
 WORKDIR /workspace
 
+# Install build tools and compilers
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install Requirements
 COPY requirements.txt .
 RUN pip install -r requirements.txt
