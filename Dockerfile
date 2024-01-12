@@ -3,8 +3,9 @@ FROM python:3.8-slim
 # Set working directory
 WORKDIR /workspace
 
-# Install Jupyter
-RUN pip install notebook
+# Install Requirements
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 # Expose Jupyter port
 EXPOSE 8888
