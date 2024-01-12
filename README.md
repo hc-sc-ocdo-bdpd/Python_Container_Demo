@@ -1,20 +1,11 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This is a demo project for containerized Python with Docker.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Setup
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+The following setup instructuions assumne a Windows 10 machine running with VS Code as the IDE.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+1.	Install Docker and WSL2 using local admin.
+2.	Add all relevant non-admin user names to the Docker user group: net localgroup docker-users "your-user-id" /ADD
+3.	Check the docker path settings in VS Code. These should simply read "docker", a full path does not seem to be required.
+4.	Other containerization software, such as Podman, may cause conflicts with Docker and may need to be uninstalled.
