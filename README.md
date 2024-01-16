@@ -31,3 +31,9 @@ This is a demo project for containerized Python with Docker.
 ### Reopen Folder Locally
 - To open the Command Palette, press `Ctrl+Shift+P` or navigate to `View > Command Palette`.
 - Choose `Dev Containers: Reopen Folder Locally`.
+
+## Working with Jupyter Notebooks
+- Navigate to the 'hello_world.ipynb' Jupyter notebook in the project.
+- Click on 'Select Kernel' in the top right corner of the notebook interface.
+- Choose 'Python Environments'.
+- Select the 'Python 3.10.4' kernel to ensure the notebook runs with the correct Python environment.
