@@ -1,8 +1,14 @@
 # Python_Container_Demo
 
-Install Remote Development extension
+## Installation
+- Install the `Vscode Remote Development` extension.
 
-Command Pallet (Ctrl+Shift+P) > Dev Containers: Rebuild and Reopen in Container
+## Working with Containers
+- **Rebuild and Reopen in Container:**
+  1. Open the Command Pallet using `Ctrl+Shift+P`.
+  2. Select `Dev Containers: Rebuild and Reopen in Container`.
 
-
-To go back to local, Command Pallet (Ctrl+Shift+P) > Dev Containers: Reopen Folder Locally
+## Switching Back to Local
+- **Reopen Folder Locally:**
+  1. Open the Command Pallet with `Ctrl+Shift+P`.
+  2. Choose `Dev Containers: Reopen Folder Locally`.
