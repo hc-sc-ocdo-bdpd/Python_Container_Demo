@@ -1,7 +1,7 @@
 # 🐍 Python Container and Jupyter Notebook Demos
 
 ## Introduction
-This repository contains two demonstration projects: a containerized web application and a Jupyter notebook example. Each subfolder in this repository has its own README with specific instructions.
+This repository contains three demonstration projects: a containerized web application, a Jupyter notebook example, and a gpu-enabled notebook example. Each subfolder in this repository has its own README with specific instructions.
 
 ## Docker Setup
 
