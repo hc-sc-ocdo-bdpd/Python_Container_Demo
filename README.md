@@ -23,3 +23,6 @@ The `web-app-example` folder contains a simple Flask-based web application. For 
 
 ### [Jupyter Notebook Example](./jupyter-notebook-example)
 The `jupyter-notebook-example` folder showcases a Jupyter notebook setup. For instructions on accessing and using the notebook, see its [README](./jupyter-notebook-example/README.md).
+
+### [GPU Notebook Example](./gpu-notebook-example)
+The `gpu-notebook-example` folder contains minimal code to connect your container to your local gpu and use it in a Jupyter notebook. For usage details, see its [README](./gpu-notebook-example/README.md).
