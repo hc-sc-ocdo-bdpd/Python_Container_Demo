@@ -16,7 +16,7 @@ This repository contains three demonstration projects: a containerized web appli
 4. Uninstall any conflicting containerization software like Podman.
 5. Ensure Docker is running (as local admin) for the IDE to recognize it.
 
-## Subfolders
+## Subfolders (Note: in VSCode you must set your root directory to the one of the following subdirectories)
 
 ### [Web App Example](./web-app-example)
 The `web-app-example` folder contains a simple Flask-based web application. For more details on setup and usage, refer to its [README](./web-app-example/README.md).
