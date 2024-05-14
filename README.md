@@ -1,7 +1,7 @@
 # 🐍 Python Container and Jupyter Notebook Demos
 
 ## Introduction
-This repository contains two demonstration projects: a containerized web application and a Jupyter notebook example. Each subfolder in this repository has its own README with specific instructions.
+This repository contains three demonstration projects: a containerized web application, a Jupyter notebook example, and a gpu-enabled notebook example. Each subfolder in this repository has its own README with specific instructions.
 
 ## Docker Setup
 
@@ -16,10 +16,13 @@ This repository contains two demonstration projects: a containerized web applica
 4. Uninstall any conflicting containerization software like Podman.
 5. Ensure Docker is running (as local admin) for the IDE to recognize it.
 
-## Subfolders
+## Subfolders (Note: in VSCode you must set your root directory to the one of the following subdirectories)
 
 ### [Web App Example](./web-app-example)
 The `web-app-example` folder contains a simple Flask-based web application. For more details on setup and usage, refer to its [README](./web-app-example/README.md).
 
 ### [Jupyter Notebook Example](./jupyter-notebook-example)
 The `jupyter-notebook-example` folder showcases a Jupyter notebook setup. For instructions on accessing and using the notebook, see its [README](./jupyter-notebook-example/README.md).
+
+### [GPU Notebook Example](./gpu-notebook-example)
+The `gpu-notebook-example` folder contains minimal code to connect your container to your local gpu and use it in a Jupyter notebook. For usage details, see its [README](./gpu-notebook-example/README.md).
