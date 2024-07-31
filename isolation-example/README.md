@@ -3,6 +3,8 @@
 ## Introduction
 This folder demonstrates how to set up Docker containers with network isolation using the `--network none` flag. This approach helps mitigate risks when working with unknown packages and models. The example includes configuration files and tests to ensure the container cannot access any network resources.
 
+Additionally, this setup includes dropping all Linux capabilities to further enhance security. Capability dropping ensures that the container has the least privileges necessary to operate, reducing the potential attack surface.
+
 ## Install VSCode Remote Development Extension
 - Open Visual Studio Code.
 - Access the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window, or by pressing `Ctrl+Shift+X`.
@@ -25,6 +27,8 @@ This folder demonstrates how to set up Docker containers with network isolation 
 
 ## Running the Tests
 The `tests` directory contains various tests to ensure that the container cannot access network resources. These tests include HTTP/HTTPS requests, DNS resolution, socket connections, FTP connections, ICMP ping requests, SMTP connections, and HTTP/HTTPS uploads and downloads.
+
+Additionally, a parameterized test is included to verify that specific Linux capabilities have been dropped from the container.
 
 ### Running Tests in VSCode
 - Ensure you have the Python extension installed in the container as described above.
@@ -50,6 +54,22 @@ The `tests/test_network_isolation.py` file contains various tests to ensure netw
 - `test_http_https_upload`
 - `test_http_https_download`
 
-Refer to the test file for detailed test implementations and purposes.
+The `tests/test_capabilities.py` file contains a parameterized test to verify that specific Linux capabilities have been dropped:
+
+- `test_capabilities` (parameterized to check the following capabilities):
+  - `cap_chown`
+  - `cap_kill`
+  - `cap_setuid`
+  - `cap_setgid`
+  - `cap_mknod`
+  - `cap_net_admin`
+  - `cap_sys_time`
+  - `cap_sys_module`
+  - `cap_net_raw`
+  - `cap_dac_override`
+  - `cap_audit_write`
+  - `cap_setfcap`
+
+Refer to the test files for detailed test implementations and purposes.
 
 For additional Docker setup instructions, refer to the main project's [README](../README.md).
