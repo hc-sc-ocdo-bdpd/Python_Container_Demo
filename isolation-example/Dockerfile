@@ -3,11 +3,14 @@ FROM python:3.8-slim
 # Set working directory
 WORKDIR /workspace
 
-# Install build tools and compilers
-RUN apt-get update && apt-get install -y \
+# Update and install build tools, compilers, and libcap2-bin
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y \
     build-essential \
     cmake \
-    && rm -rf /var/lib/apt/lists/*
+    libcap2-bin && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install Requirements
 COPY requirements.txt .
