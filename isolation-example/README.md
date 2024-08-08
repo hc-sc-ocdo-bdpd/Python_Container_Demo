@@ -7,6 +7,16 @@ Additionally, this setup includes dropping all Linux capabilities to further enh
 
 Moreover, resource limiting is configured to restrict the container's memory and CPU usage. This ensures that the container cannot consume excessive resources, which could impact the host system.
 
+## Instructions for Users
+### Opening this Directory as a Root in VSCode
+To work with each specific example or template in this repository, you need to open this subdirectory as the root in VSCode. Follow these steps:
+
+1. Open Visual Studio Code.
+2. Navigate to `File > Open Folder`.
+3. Select this subdirectory (`Python_Container_Demo/Isolation_Example`) to open it as the root folder.
+
+This will ensure that VSCode and Docker/VSCode look at the `.devcontainer` folder correctly.
+
 ## Install VSCode Remote Development Extension
 - Open Visual Studio Code.
 - Access the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window, or by pressing `Ctrl+Shift+X`.
