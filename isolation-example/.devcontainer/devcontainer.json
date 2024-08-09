@@ -1,0 +1,28 @@
+{
+    "name": "My Container",
+    "build": {
+        "context": "..",
+        "dockerfile": "../Dockerfile"
+    },
+    "forwardPorts": [8888],
+    "extensions": [
+        "ms-python.python", 
+        "ms-toolsai.jupyter"
+    ],
+    "runArgs": [
+        // Disable networking for the container to prevent any network connections
+        "--network", "none",
+        
+        // Drop all Linux capabilities for the container to ensure it runs with the least privilege necessary
+        "--cap-drop", "ALL",
+        
+        // Prevent processes in the container from gaining new privileges
+        "--security-opt", "no-new-privileges",
+        
+        // Limit memory usage to 1GB
+        "--memory", "1g",
+        
+        // Limit CPU usage to 1 core
+        "--cpus", "1.0"
+    ]
+}
